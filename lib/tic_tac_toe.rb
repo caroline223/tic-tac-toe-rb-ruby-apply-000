@@ -66,14 +66,6 @@ def turn(board)
   end
 end
 
-def play(board)
-  i = 0
-  while i < 9
-  i += 1 
-  turn(board)
-end
-end
-
 def current_player(board)
   turn = turn_count(board)
   if
