@@ -8,6 +8,7 @@ def display_board(board)
  puts  "-----------\n"
  puts  " #{board[6]} | #{board[7]} | #{board[8]} \n"
 end
+display_board(board)
 
 def input_to_index(player_input)
   new_input = player_input.to_i
@@ -18,7 +19,7 @@ end
 def move(board, index, character = "X")
   board[index] = character
 end
-display_board(board)
+
 
 board = [" "," "," "," "," "," "," "," "," "]
 def position_taken?(board,index)
