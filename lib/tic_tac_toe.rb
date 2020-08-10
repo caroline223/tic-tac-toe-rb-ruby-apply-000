@@ -15,7 +15,7 @@ def input_to_index(player_input)
   return new_input
 end
 
-def move?(board, index, character = "X")
+def move(board, index, character = "X")
   board[index] = character
 end
 display_board(board)
